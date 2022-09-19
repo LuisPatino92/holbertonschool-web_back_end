@@ -4,14 +4,12 @@
 from typing import Tuple, List
 
 
-def zoom_array(lst: Tuple, factor: int = 2) -> List:
-    """List"""
-    zoomed: List = [
+def zoom_array(lst: Tuple, factor: int = 2) -> Tuple:
+    zoomed_in: Tuple = [
         item for item in lst
         for i in range(factor)
     ]
-    return zoomed:
-
+    return zoomed_in
 
 
 array = tuple([12, 72, 91])
