@@ -13,7 +13,7 @@ def zoom_array(lst: Tuple, factor: int = 2) -> List:
     return zoomed:
 
 
-if __name__ == "__main__":
-    array = tuple([12, 72, 91])
-    zoom_2x = zoom_array(array)
-    zoom_3x = zoom_array(array, int(3.0))
+
+array = tuple([12, 72, 91])
+zoom_2x = zoom_array(array)
+zoom_3x = zoom_array(array, int(3.0))
