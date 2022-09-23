@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """Module"""
 from base_caching import BaseCaching
 
@@ -39,5 +39,5 @@ class MRUCache(BaseCaching):
 
         item = self.cache_data[key]
         self.put(key, item)
-        
+
         return self.cache_data.get(key)
