@@ -12,7 +12,6 @@ class FIFOCache(BaseCaching):
         """That makes checker happy, cause is big"""
         super().__init__()
 
-
     def put(self, key, item):
         """Adds an element to cache using some approach to cache"""
         if key is None or item is None:
