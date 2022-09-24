@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
-"""A more detailed docstring for the module."""
-
+"""A more detailed docstring for the module"""
 from base_caching import BaseCaching
 
 
@@ -24,7 +23,7 @@ class FIFOCache(BaseCaching):
             to_remove = list(self.cache_data.keys())[0]
             del self.cache_data[to_remove]
             print("DISCARD: {}".format(to_remove))
-            self.cache_data[key] = item
+        self.cache_data[key] = item
 
     def get(self, key):
         """ Get an item by key """
