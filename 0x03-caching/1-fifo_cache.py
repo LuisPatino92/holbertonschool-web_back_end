@@ -16,8 +16,7 @@ class FIFOCache(BaseCaching):
         """Adds an element to cache using some approach to cache"""
         if key is None or item is None:
             return
-        elif: 
-            len(self.cache_data.keys()) == BaseCaching.MAX_ITEMS
+        elif len(self.cache_data.keys()) == BaseCaching.MAX_ITEMS
             and key not in self.cache_data.keys():
             to_remove = list(self.cache_data.keys())[0]
             del self.cache_data[to_remove]
@@ -26,6 +25,6 @@ class FIFOCache(BaseCaching):
 
     def get(self, key):
         """ Get an item by key """
-        if(key is None or key not in self.cache_data.keys()):
+        if key is None or key not in self.cache_data.keys():
             return
         return self.cache_data.get(key)
