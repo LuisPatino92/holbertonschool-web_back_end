@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """A more detailed docstring for the module"""
+
 from base_caching import BaseCaching
 
 
@@ -15,8 +16,8 @@ class LIFOCache(BaseCaching):
         """ Adds an element to cache using some approach"""
         if key is None or item is None:
             return
-        if len(self.cache_data.keys()) == BaseCaching.MAX_ITEMS
-           and key not in self.cache_data.keys():
+        if (len(self.cache_data.keys()) == BaseCaching.MAX_ITEMS
+                and key not in self.cache_data.keys()):
             to_remove = list(self.cache_data.keys())[
                 BaseCaching.MAX_ITEMS - 1]
             del self.cache_data[to_remove]
@@ -27,6 +28,6 @@ class LIFOCache(BaseCaching):
 
     def get(self, key):
         """ Gets  element from cache using some approach"""
-        if(key is None or key not in self.cache_data.keys()):
+        if key is None or key not in self.cache_data.keys():
             return
         return self.cache_data.get(key)
