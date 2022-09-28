@@ -33,7 +33,7 @@ class MRUCache(BaseCaching):
 
     def get(self, key):
         """ Gets  element from cache using some approach"""
-        
+
         if key is None or key not in self.cache_data.keys():
             return
 
