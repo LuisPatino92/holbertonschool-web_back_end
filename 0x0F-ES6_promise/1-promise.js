@@ -1,5 +1,5 @@
 function getFullResponseFromAPI(success) {
-  let prom = new Promise((resolve, reject) => {
+  const prom = new Promise((resolve, reject) => {
     if (success) {
       resolve({
         status: 200,
