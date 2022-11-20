@@ -9,7 +9,9 @@ async function asyncUploadUser() {
   try {
     uploadUser.photo = await uploadPhoto();
     uploadUser.user = await createUser();
-  } finally { }
+  } finally {
+    uploadUser.photo = null
+  }
 
   return uploadUser;
 }
